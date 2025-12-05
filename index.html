@@ -1,46 +1,100 @@
 <!--Unit 4 Project
 Requirements
-[ ] Three Distinct CSS font-family Declarations
-[ ] One Google Font or Uploaded Font
-[ ] An Unordered **or** Ordered List (<ul> or <ol>)
-[ ] Three Images
+[ yes ] Three Distinct CSS font-family Declarations
+[ yes ] One Google Font or Uploaded Font
+[ yes ] An Unordered **or** Ordered List (<ul> or <ol>)
+[ yes ] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Include :hover Effect 
 [ no ] Feature 2 - Change the <li> markers
 [ no ] Feature 3 - Change the Favicon
 [ no ] Feature 4 - Include Hand Drawn Border
-[ no ] Feature 5 - Use background-blend-mode: overlay
+[ yes ] Feature 5 - Use background-blend-mode: overlay
 -->
 
 <!DOCTYPE html>
 <html>
 
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
   <title>Unit 4 Project</title>
   <meta charset="utf-8">
   <style>
+li ::marker {
+  content: "♡";
+  color:rgb(251, 222, 227);
+}
+
+body {
+  background-image: url("https://c8.alamy.com/comp/KCEG8C/1873-beers-map-of-flushing-and-college-point-queens-new-york-KCEG8C.jpg");
+background-blend-mode: overlay;
+background-color:rgb(190, 197, 212)
+}
+
+.food {
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.drinks {
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.do {
+font-family: cursive;
+}
+
+.title {
+   font-family: "Shizuru", system-ui;
+}
 
   </style>
 </head>
 <body>
 
-  <h1>My Unofficial Local Guide to Pia's neighborhood</h1>
+  <h1 class="title">An Unofficial Guide to Pia's neighborhood</h1>
   
-  <h3>Content Element 1</h3>
+  <h3 class="food">Best Foods</h3>
   <hr>
-  <p>About Content Element #1</p>
+  <p><ul>
+    <li>Chinese drypot</li>
+    <li>Skewers</li>
+    <li>Korean BBQ</li>
+  </ul>
+  <img src="https://jessfoodgrams.home.blog/wp-content/uploads/2018/11/img_5241.jpg?w=557&h=418" width="170" height="150">
+<img src="https://s3-media0.fl.yelpcdn.com/bphoto/ETAfDM7ZCW0r0dHoZIKkKw/348s.jpg" width="150" height="150">
+<img src="https://gothamist.com/attachments/nyc_nellcasey/053116food.jpeg" width="230" height="150">
+</p>
   <br><br>
 
-  <h3>Content Element 2</h3>
+  <h3 class="drinks">What drinks to get</h3>
   <hr>
-  <p>About Content Element #2</p>
+  <p><ul>
+    <li>Molly Tea - peach oolong tea</li>
+    <li>Heytea - Grapefruit Mango Boom</li>
+    <li>TEAPULSE - Grapefruit tea </li>
+    
+  </ul>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStnkZMWnQatb7og68Prfq54bnkjwjbjBdX8A&s" width="200" height="300">
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTymx8-yJpc4pNaOuvqSRUz6qKU717Ut0z-CA&s" width="240" height="300"></p>
+ <img src="https://images.squarespace-cdn.com/content/v1/66f1726a0ddccb513b3995d0/4fb72c04-465f-43df-87ed-a0682c0d5e2b/EOSR2688.JPG" width="200" "
   <br><br>
 
-  <h3>Content Element 3</h3>
+  <h3 class="do">Things to do</h3>
   <hr>
-  <p>About Content Element #3</p>
-  <br><br>
+  <p><ul>
+    <li>Karaoke</li>
+    <li>Arcade</li>
+    <li>Cat Cafe</li>
+    
+  </ul>
+<img src="https://res.cloudinary.com/the-infatuation/image/upload/v1721226025/images/NYC_TheRealKTV_BryanKimiPhoneContent_EDIT_01_h9lmlc.jpg" width="300" height="200"></p>
+<img src="https://s3-media0.fl.yelpcdn.com/bphoto/dO1__HitBvcG-VnJHQxMMw/348s.jpg" width="200" height="200" 
+<br><br>
+
+
 
 </body>
 </html>
